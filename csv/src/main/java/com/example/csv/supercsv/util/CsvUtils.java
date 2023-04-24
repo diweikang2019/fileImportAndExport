@@ -102,7 +102,6 @@ public class CsvUtils {
     }
 
     public static void exportCsv(HttpServletResponse response, String fileName, String[] header, String[] nameMapping, CellProcessor[] processors, List<?> dataList) {
-
         try {
             // 设置文件后缀
             fileName = URLEncoder.encode(fileName + ".csv", StandardCharsets.UTF_8.name());
